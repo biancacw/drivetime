@@ -1,0 +1,23 @@
+Documentation for "Degauss Drivetime and US Hospitals Data" Repository
+
+Introduction:
+The Degauss Drivetime data and the HIFLD Open data were combined to create a comprehensive list of 7,597 US hospitals and their respective drive times from an input address. The drive time data uses isochrones to determine the drive time from an input address to each hospital in the list.
+
+Isochrones are concentric polygons that represent the drive time to a given care center, with every point inside a polygon having the same drive time to the care center. The drive time data was obtained from the OpenRoute service. Additionally, the Euclidean distance between the input address and the care center was calculated in meters to provide an overall metric for how far a participant lives from their care center.
+
+The HIFLD data contains a feature class/shapefile with the locations of hospitals for all 50 US states, Washington D.C., and US territories such as Puerto Rico, Guam, American Samoa, Northern Mariana Islands, Palau, and Virgin Islands. The combination of these two datasets provides a comprehensive list of US hospitals with their respective drive times, making it easier for users to find the closest care center based on their location.
+
+Data Sources:
+The drivetime data is sourced from the Degauss website (https://degauss.org/drivetime/). The US Hospitals list is sourced from the HIFLD Open data platform (https://hifld-geoplatform.opendata.arcgis.com/).
+
+Data Processing:
+The drivetime data has been processed to remove any unnecessary columns and format the data for more accessible analysis. The US Hospitals list has been processed to include only the name and locations of the hospitals.
+
+Data Files:
+The repository contains two data files:
+
+"drivetime_data.csv" - this file contains the processed drivetime data.
+"us_hospitals.csv" - this file contains the processed US Hospitals list.
+
+Conclusion:
+This repository provides a comprehensive data set for analyzing drivetime and hospital locations in the United States. The data has been processed for easier analysis and can be used for various purposes, including mapping and location analysis.
